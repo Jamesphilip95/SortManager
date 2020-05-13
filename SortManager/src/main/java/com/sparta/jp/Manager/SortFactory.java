@@ -16,8 +16,8 @@ public class SortFactory {
         Properties properties = new Properties();
         Display display = new Display();
         try {
-            properties.load(new FileReader("src/main/resources/sort.properties"));
-            String s = display.displayTerminalSortTypeRequest("src/main/java/com/sparta/jp/Sorters");
+            properties.load(new FileReader("SortManager/src/main/resources/sort.properties"));
+            String s = display.displayTerminalSortTypeRequest("SortManager/src/main/java/com/sparta/jp/Sorters");
             String sorter = properties.getProperty(s);
             Class selectedSorter = Class.forName(sorter);
 
