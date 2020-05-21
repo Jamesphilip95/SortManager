@@ -12,7 +12,6 @@ import org.apache.log4j.PropertyConfigurator;
 public class Starter {
 
     static final String LOG_PROPERTIES_FILE = "SortManager/src/main/resources/log4j.properties";
-    static Logger log = Logger.getLogger(Starter.class.getName());
 
     public static void main(String[] args) {
 
